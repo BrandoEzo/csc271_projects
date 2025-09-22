@@ -61,17 +61,17 @@
         </ul>
         <h3>Interest Form</h3><!--a (probably temporary) form to see who is visiting the site. A better use for a form would be the add events to calendar page, but I have not made said calendar page yet-->
         <form action="homepage.html" method="get">
-            <label for="title">Name:</label>
-            <input type="text" name="name" maxlength="55" required>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" maxlength="55" required>
             <br>
-            <label for="title">Favorite Character to play:</label>
-            <input type="text" name="FavoriteChar" maxlength="55" required>
+            <label for="FavoriteChar">Favorite Character to play:</label>
+            <input type="text" id="FavoriteChar" name="FavoriteChar" maxlength="55" required>
             <br>
-            <label for="title">Are You From RI?:</label>
-            <input type="radio" name="FromRI" value="yes" required/> Yes
-            <input type="radio" name="FromRI" value="no" required/> No
+            <p>Are You From RI?:</p>
+            <input type="radio" name="FromRI" value="yes" required> Yes
+            <input type="radio" name="FromRI" value="no" required> No
             <br>
-            <input type="submit" name="submit" value="Submit"/>
+            <input type="submit" name="submit" value="Submit">
         </form>
 
 </body>
