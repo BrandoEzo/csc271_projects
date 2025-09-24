@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>Submit Your Recipes</title> <!--Tab headder-->
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Submit Your Recipe!</h1>
+    <form action="index.html" method="get">
+            <label for="name">Recipe Name:</label>
+            <input type="text" id="name" name="name" maxlength="55" required>
+            <br>
+            <p>Instructions:</p>
+            <textarea name="instructions" cols="40" rows="8" required> Enter instructions...</textarea>
+            <br>
+            <p>Difficulty:</p>
+            <input type="radio" name="difficulty" value="Easy" required> Easy
+            <input type="radio" name="difficulty" value="Medium" required> Medium
+            <input type="radio" name="difficulty" value="Hard" required> Hard
+            <br>
+            <p>Dietary Preferences</p>
+            <input type="checkbox" name="Dietary" value="Vegan" /> Vegan
+            <input type="checkbox" name="Dietary" value="Vegetarian" /> Vegetarian
+            <input type="checkbox" name="Dietary" value="Gluten Free" /> Fluten Free
+            <input type="checkbox" name="Dietary" value="Dairy Free" /> Dairy Free
+            <input type="checkbox" name="Dietary" value="Low Sodium" /> Low Sodium
+            <br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+        <a href="index.html" target="_blank">Back To Homepage</a>
+</body>
