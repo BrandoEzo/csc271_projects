@@ -11,6 +11,8 @@ hr{
 h1{
     font-family: Impact, fantasy;
     font-size: 55px;
+    text-align: center;
+    color: #011c46
 }
 /* some paragraphs will be centered */
 p.center{
@@ -19,7 +21,7 @@ p.center{
 /* some headings will be centered and navy blue to match the logo */
 #sphead{
     text-align: center;
-    color: #011c46
+    color: #ffd500
 }
 /* link styling */
 a {
