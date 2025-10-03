@@ -1,0 +1,33 @@
+/* Brandon Ezovski, 10/2/2025, this CSS style sheet is for the RISSBU website, styling simple elements like horizontal lines
+links, h1s, and specific styles for select headings (#sphead) and paragraphs (p.center)*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #7bbece;
+}
+hr{
+    border: 3px solid #ffd500;
+}
+/* h1s will be in Impact font (fantasy backup) with a larger size */
+h1{
+    font-family: Impact, fantasy;
+    font-size: 55px;
+}
+/* some paragraphs will be centered */
+p.center{
+    text-align: center;
+}
+/* some headings will be centered and navy blue to match the logo */
+#sphead{
+    text-align: center;
+    color: #011c46
+}
+/* link styling */
+a {
+    color: #0053cc;
+}
+a:visited{
+    color: #270252;
+}
+a:hover{
+    color: #cb0997;
+}
