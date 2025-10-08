@@ -5,75 +5,96 @@
     <title>RISSBU Homepage</title> <!--Tab headder-->
     <meta charset="UTF-8"> <!--Apparently this is needed to fix an error on the validator-->
     <link href="css/main.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 </head>
 <body>
-    <h1>Rhode Island SSBU Homepage</h1> <!--Large heading at top of page-->
-    <p class="center"> <img src="images/RISSBULogo.jpg" alt="Rhode Island Super Smash Bros Logo" width="1000" height="563" > </p>
-    <h2 id="sphead"><strong>Welcome to the Official Rhode Island Super Smash Bros Ultimate Website!</strong></h2><!--Secondary title welcome message-->
-    <h3>What is the Rhode Island Super Smash Bros Scene?</h3><!--tertiary heading for section info-->
-    <p>
-        We are a grassroots esports community from Rhode Island who host events for <em>Super Smash Bros Ultimate</em>! 
-        We host tournaments for gamers to test their skills and compete throughout the state, as well as publish
-        rankings of players at the end of each three month competitive season. 
-    </p>
-    <hr>
-    <iframe width="1000" height="563" src="https://www.youtube.com/embed/SxV-ZPqysps?autoplay=1&mute=1">
-    </iframe>
-    <h3>What is this site?</h3><!--tertiary heading for section info-->
-    <p>
-        This site will act as a hub of easy to access information about our scene, including an event calendar, 
-        weekly and monthly event pages, a comprehensive ranking information page, links to the various social media pages,
-        and tools for Tournament Organizers to promote their events. 
-    </p>
-    <hr>
-    <h3>New England Unified Tournament Ruleset</h3><!--tertiary heading for section info-->
-        <ul>
-            <li><strong>3 Stocks</strong></li>
-            <li><strong>7 Minute Timer</strong></li>
-            <li><strong>Hazards Off</strong></li>
-            <li><strong>3 Bans, No DSR</strong></li>
-            <li><strong>Starters</strong>
+    <div class="header">
+			<a class="link" href="homepage.html"><img id="logo" src="images/RISSBULogo.jpg" alt="Rhode Island Super Smash Bros Logo" width="192" height="108"></a>
+			<div class="header-right" >
+				<a class="active" href="homepage.html">Home</a>
+                <a class="link" href="event_series.html">RI SSBU Event Page</a>
+                <a class="link" href="rankings.html">RI SSBU Rankings Page</a>
+			</div>
+		</div>
+    <div class="left-col">
+        <div class="card">
+            <h1>Rhode Island SSBU Homepage</h1> <!--Large heading at top of page-->
+            <p class="center"> <img src="images/RISSBULogo.jpg" alt="Rhode Island Super Smash Bros Logo" width="1000" height="563" > </p>
+            <h2 id="sphead"><strong>Welcome to the Official Rhode Island Super Smash Bros Ultimate Website!</strong></h2><!--Secondary title welcome message-->
+        </div>
+        <div class="card">
+            <h3>What is the Rhode Island Super Smash Bros Scene?</h3><!--tertiary heading for section info-->
+            <p>
+                We are a grassroots esports community from Rhode Island who host events for <em>Super Smash Bros Ultimate</em>! 
+                We host tournaments for gamers to test their skills and compete throughout the state, as well as publish
+                rankings of players at the end of each three month competitive season. 
+            </p>
+        </div>
+        <hr>
+        <div class="card">
+            <iframe width="1000" height="563" src="https://www.youtube.com/embed/SxV-ZPqysps?autoplay=1&mute=1">
+            </iframe>
+            <h3>What is this site?</h3><!--tertiary heading for section info-->
+            <p>
+                This site will act as a hub of easy to access information about our scene, including an event calendar, 
+                weekly and monthly event pages, a comprehensive ranking information page, links to the various social media pages,
+                and tools for Tournament Organizers to promote their events. 
+            </p>
+        </div>
+        <hr>
+        <div class="card">
+            <h3>New England Unified Tournament Ruleset</h3><!--tertiary heading for section info-->
                 <ul>
-                    <li>Battlefield</li>
-                    <li>Small Battlefield</li>
-                    <li>Pokemon Stadium 2</li>
-                    <li>Smashville</li>
-                    <li>Town & City</li>
+                    <li><strong>3 Stocks</strong></li>
+                    <li><strong>7 Minute Timer</strong></li>
+                    <li><strong>Hazards Off</strong></li>
+                    <li><strong>3 Bans, No DSR</strong></li>
+                    <li><strong>Starters</strong>
+                        <ul>
+                            <li>Battlefield</li>
+                            <li>Small Battlefield</li>
+                            <li>Pokemon Stadium 2</li>
+                            <li>Smashville</li>
+                            <li>Town & City</li>
+                        </ul>
+                    </li>
+                    <li><strong>Counterpicks</strong>
+                        <ul>
+                            <li>Final Destination</li>
+                            <li>Kalos Pokemon League </li>
+                            <li>Hollow Bastion</li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-            <li><strong>Counterpicks</strong>
-                <ul>
-                    <li>Final Destination</li>
-                    <li>Kalos Pokemon League </li>
-                    <li>Hollow Bastion</li>
-                </ul>
-            </li>
-        </ul>
-        
-    <hr>
-    <h3>Important Links</h3><!--tertiary heading for section info-->
-        <ul>
-            <li><a href ="https://x.com/RI_SSB" target="_blank">Rhode Island Smash Twitter Account</a></li>
-            <li><a href ="https://x.com/smash_uri" target="_blank">URI Smash Bros Twitter Account</a></li>
-            <li><a href ="https://x.com/HowlingRI" target="_blank">Howling RI Twitter Account</a></li>
-            <li><a href ="https://www.youtube.com/@HowlingRI" target="_blank">Howling RI Youtube Channel</a></li>
-            <li><a href="event_series.html" target="_blank">RI SSBU Event Page</a></li>
-            <li><a href="rankings.html" target="_blank">RI SSBU Rankings Page</a></li>
-            <li><a href="mailto:rissb@example.org" target="_blank">RI Smash Email</a></li><!--not a real email-->
-        </ul>
-        <h3>Interest Form</h3><!--a (probably temporary) form to see who is visiting the site. A better use for a form would be the add events to calendar page, but I have not made said calendar page yet-->
-        <form action="homepage.html" method="get">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" maxlength="55" required>
-            <br>
-            <label for="FavoriteChar">Favorite Character to play:</label>
-            <input type="text" id="FavoriteChar" name="FavoriteChar" maxlength="55" required>
-            <br>
-            <p>Are You From RI?:</p>
-            <input type="radio" name="FromRI" value="yes" required> Yes
-            <input type="radio" name="FromRI" value="no" required> No
-            <br>
-            <input type="submit" name="submit" value="Submit">
-        </form>
-
+        </div>
+        <hr>
+        <div class="card">
+            <h3>Important Links</h3><!--tertiary heading for section info-->
+            <ul>
+                <li><a href ="https://x.com/RI_SSB" target="_blank">Rhode Island Smash Twitter Account</a></li>
+                <li><a href ="https://x.com/smash_uri" target="_blank">URI Smash Bros Twitter Account</a></li>
+                <li><a href ="https://x.com/HowlingRI" target="_blank">Howling RI Twitter Account</a></li>
+                <li><a href ="https://www.youtube.com/@HowlingRI" target="_blank">Howling RI Youtube Channel</a></li>
+                <li><a href="mailto:rissb@example.org" target="_blank">RI Smash Email</a></li><!--not a real email-->
+            </ul>
+        </div>
+        <hr>
+        <div class="card">
+            <h3>Interest Form</h3><!--a (probably temporary) form to see who is visiting the site. A better use for a form would be the add events to calendar page, but I have not made said calendar page yet-->
+            <form action="homepage.html" method="get">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" maxlength="55" required>
+                <br>
+                <label for="FavoriteChar">Favorite Character to play:</label>
+                <input type="text" id="FavoriteChar" name="FavoriteChar" maxlength="55" required>
+                <br>
+                <p>Are You From RI?:</p>
+                <input type="radio" name="FromRI" value="yes" required> Yes
+                <input type="radio" name="FromRI" value="no" required> No
+                <br>
+                <input type="submit" name="submit" value="Submit">
+            </form>
+        </div>
+    </div>
 </body>

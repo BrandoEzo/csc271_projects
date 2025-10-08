@@ -2,7 +2,7 @@
 links, h1s, and specific styles for select headings (#sphead) and paragraphs (p.center)*/
 body {
     font-family: Arial, sans-serif;
-    background-color: #7bbece;
+    background-color: #97b5bc;
 }
 hr{
     border: 3px solid #ffd500;
@@ -12,7 +12,7 @@ h1{
     font-family: Impact, fantasy;
     font-size: 55px;
     text-align: center;
-    color: #011c46
+    color: #ffd500
 }
 /* some paragraphs will be centered */
 p.center{
@@ -25,11 +25,80 @@ p.center{
 }
 /* link styling */
 a {
-    color: #0053cc;
+    color: #85b2f7;
 }
 a:visited{
-    color: #270252;
+    color: #130127;
 }
 a:hover{
-    color: #cb0997;
+    color: #09cbc5;
+}
+
+
+/* from lab 6*/
+div.header{
+  overflow:hidden;
+  background: #011c46;
+  padding: 5px;
+}
+.header a{
+  float: left;
+  color:#ffd500;
+  font-family:verdana;
+  font-size:18px;
+  text-decoration:none;
+  padding:12px;
+}
+
+.header a:hover{
+  color:rgb(155, 5, 197);
+}
+
+a.active {
+  color:rgb(8, 95, 101);
+  background-color: rgb(255, 238, 0);
+}
+div.header-right{
+  float:right;
+  margin:12px;
+}
+
+div.left-col{
+float:left;
+padding-left:20px;
+padding-right:20px;
+}
+
+div.card{
+  background-color:rgb(70, 77, 114);
+  padding:20px;
+  margin:20px;
+}
+
+
+/*for small screens*/
+ @media only screen and (max-width: 600px) {
+  div.header a {
+    float:none;
+    display:block;
+    text-align: left;
+  }
+
+  div.header-right{
+    float:none;
+  }
+
+  div.left-col{
+    width:100%;
+  }
+  div.right-col{
+    width:100%;
+  }
+  div.card{
+    font-size:30px;
+  }
+  img{
+    max-width: 100%;
+    height:auto;
+  }
 }
