@@ -82,6 +82,7 @@ div.card{
     float:none;
     display:block;
     text-align: left;
+    padding: 5px;
   }
 
   div.header-right{
@@ -96,8 +97,13 @@ div.card{
   }
   div.card{
     font-size:30px;
+    padding: 5px;
   }
   img{
+    max-width: 100%;
+    height:auto;
+  }
+  iframe{
     max-width: 100%;
     height:auto;
   }
