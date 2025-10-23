@@ -7,7 +7,7 @@ These additions will enhance user expirience by allowing users to gain more info
 
 ## Task Breakdown
 Break down the process into smaller tasks that your script will need to perform. Think through each step, from capturing user input to displaying the final output on the site.
-First I will declare the variables I need for each player I'm going to give a spotlight to (probably just the 5 on the current ranking), and list out information like main character, win rate, average placement on the rankings, and other fun statistics. Next, I will change up the rankings.html file to make room for these new sections. Next, I will get these fields from the .html file in the .js file in order to give it the information we need. 
+First I will declare the variables I need for each player I'm going to give a spotlight to (probably just the 5 on the current ranking), and list out information like main character, win rate, average placement on the rankings, and other fun statistics. Next, I will change up the rankings.html file to make room for these new sections. Next, I will get these fields from the .html file in the .js file in order to give it the information we need.
 
 ## Flowchart
 ![Flowchart Image](image.png)
