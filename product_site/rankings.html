@@ -36,21 +36,22 @@
 		</div>
     <div class="left-col">
         <div class="card">
-        <h1> <!--Page title-->
-            <strong>Rhode Island Power Rankings</strong>
-        </h1>
-        <h2> <!--Most Recent Power Ranking-->
-            Rhode Island Summer 2025 Power Ranking
-        </h2>
-        <img src="images/Summer25RIPR.jpg" alt="Rhode Island Summer 2025 Power Ranking" width="1080">
-        <ol> <!--Ordered list of players on current ranking-->
-            <li><strong>Dew2</strong></li>
-            <li><strong>Paulo</strong></li>
-            <li><strong>Ultra | MAMMOTH</strong></li>
-            <li><strong>Alan$</strong></li>
-            <li><strong>Brando</strong></li>
-        </ol>
+            <h1> <!--Page title-->
+                <strong>Rhode Island Power Rankings</strong>
+            </h1>
+            <h2> <!--Most Recent Power Ranking-->
+                Rhode Island Summer 2025 Power Ranking
+            </h2>
+            <img src="images/Summer25RIPR.jpg" alt="Rhode Island Summer 2025 Power Ranking" width="1080">
+            <ol> <!--Ordered list of players on current ranking-->
+                <li><strong>Dew2</strong></li>
+                <li><strong>Paulo</strong></li>
+                <li><strong>Ultra | MAMMOTH</strong></li>
+                <li><strong>Alan$</strong></li>
+                <li><strong>Brando</strong></li>
+            </ol>
         </div>
+        
         <!--JavaScript Section-->
         <div class="card">
             <h2 id="rankings-breakdown">Section Heading</h2>
@@ -65,7 +66,53 @@
             <h3 class="playerName">Player 5</h3>
             <p>Player 5 Info</p>
         </div>
+        
         <hr>
+        <!--player search section-->
+        <div class="card">
+            <!-- Header for the rankings section with a rating filter dropdown -->
+            <div class="rankings-search-header">
+                <h3>Player Search</h3>
+                <div class="filter">
+
+                    <!-- Filter label and dropdown to filter reviews by rating -->
+                    <label for="rankings-filter">Filter by ranking:</label>
+                    <select id="rankings-filter">
+                        <!-- Filter options for each rating level and 'All' option -->
+                        <option value="All">All</option>
+                        <option value="5">Ranked 1st</option>
+                        <option value="4">Ranked Top 3</option>
+                        <option value="3">Ranked Top 5</option>
+                        <option value="2">Ranked Multiple Times</option>
+                        <option value="1">Ranked Only Once</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Review card with placeholders for each review's details -->
+            <div class="player-card">
+                <div class="review-rating" data-rating="0"></div>
+                <p class="review-username">Username <span class="review-date">Date</span></p>
+                <p class="review-text">Review...</p>
+            </div>
+
+            <!-- Review card with placeholders for each review's details -->
+            <div class="player-card">
+                <div class="review-rating" data-rating="0"></div>
+                <p class="review-username">Username <span class="review-date">Date</span></p>
+                <p class="review-text">Review...</p>
+            </div>
+
+            <!-- Review card with placeholders for each review's details -->
+            <div class="player-card">
+                <div class="review-rating" data-rating="0"></div>
+                <p class="review-username">Username <span class="review-date">Date</span></p>
+                <p class="review-text">Review...</p>
+            </div>
+        </div>
+
+        <hr>
+
         <div class="card">
             <h2> <!--info section-->
                 What is a Power Ranking?
@@ -123,4 +170,5 @@
         </div>
     </div>
     <script src="js/rankings-data.js"></script>
+    <script src="js/all-rankings-data.js"></script>
 </body>

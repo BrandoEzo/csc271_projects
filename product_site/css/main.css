@@ -80,6 +80,32 @@ div.card{
 }
 
 
+div.player-card{
+  background-color:rgb(123, 211, 240);
+  padding:20px;
+  margin:20px;
+}
+.rankings-search {
+    margin-top: 20px;
+}
+
+.rankings-search-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rankings h3 {
+    font-size: 1.4em;
+}
+
+.filter label {
+    margin-right: 10px;
+}
+
+
+
 /*for small screens*/
  @media only screen and (max-width: 600px) {
   div.header a {
