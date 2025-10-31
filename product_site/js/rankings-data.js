@@ -1,4 +1,5 @@
-//Brandon Ezovski, 10/22/2025, .js file to compute player statistics and import them into the rankings.html file
+//Brandon Ezovski, 10/22/2025, .js file to compute player statistics for the currently ranked players 
+// and import them into the rankings.html file
 
 //array of player names
 var players = ["Dew2", "Paulo", "Mammoth", "Alan$", "Brando"];

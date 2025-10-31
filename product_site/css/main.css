@@ -80,8 +80,8 @@ div.card{
 }
 
 
-div.player-card{
-  background-color:rgb(123, 211, 240);
+div.playerCard{
+  background-color:rgb(129, 173, 188);
   padding:20px;
   margin:20px;
 }
@@ -103,7 +103,12 @@ div.player-card{
 .filter label {
     margin-right: 10px;
 }
-
+.characterImage {
+  float:left;
+  width:7.5%;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
 
 
 /*for small screens*/
