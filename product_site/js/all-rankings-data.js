@@ -1,6 +1,52 @@
-//Brandon Ezovski, 10/30/2025, .js file to fill out the player search section of the rankings.html file for
+//Brandon Ezovski, 11/5/2025, updated .js file to use functions.
+//10/30/2025, .js file to fill out the player search section of the rankings.html file for
 //all 30 players that have been ranked in RI at some point since Summer 2022
 
+//basic function:
+function addSearchTitle() {
+    var title = "Player Search";
+    var content = document.getElementById("title");
+    content.textContent = title;
+};
+
+//function with input:
+function setContent(card, name, mainCharacter, secondaryCharacters, peakRank, currRank, timesRanked){
+    //update player name heading, and info section
+    var player = card.querySelector("h3.playerName");
+	player.textContent = name;
+    var info = card.querySelector("p.info");
+    var rank = peakRank.toString();
+    rank = getRankSuffix(rank);
+    //set info as a variable for easier access
+    var infoString = "Main Character: <strong>" + mainCharacter +"</strong><br>Secondary Character(s): <strong>" + secondaryCharacters + "</strong><br>Peak Ranking: <strong>" + rank + "</strong><br>Current Ranking: <strong>" + currRank + "</strong><br>Number of Times Ranked: <strong>" + timesRanked + "</strong>";
+    info.innerHTML = infoString;
+    //get image url using mainCharacter
+    var imageUrl = "images/" + mainCharacter + ".png";
+    var image = card.querySelector("img.characterImage");
+	image.src = imageUrl;
+	image.alt = mainCharacter;
+    // Store metadata on the card for easy filtering
+    card.dataset.timesRanked = timesRanked;
+    card.dataset.peakRanking = peakRank;
+};
+//function with return value:
+function getRankSuffix(rank){
+    if(rank == 1){
+        rank+="st";
+    }
+    else if(rank == 2){
+        rank+="nd";
+    }
+    else if(rank == 3){
+        rank+="rd";
+    }
+    else{
+        rank+="th";
+    }
+    return rank;
+};
+//call simple title function
+addSearchTitle();
 //player list
 var players = ["808", "9Volt", "Abruzaza", "Alan$", "Brando", "Cheech", "Craftis", "Dew2", "DYL", "Ethan", 
     "Heatsurge", "Jimnub", "Komeng", "Leviathan", "MAMMOTH", "MaRune", "Melooong", "Nazier", "Paulo", "Phin!", 
@@ -29,40 +75,13 @@ for(var i = 0; i < playerCards.length; i++){
         playerCards[i].style.display = "none";
         continue;
     }
-    //update player name heading, and info section
-    var player = playerCards[i].querySelector("h3.playerName");
-	player.textContent = players[i];
-    var info = playerCards[i].querySelector("p.info");
-    var rank = (peakRanking[i]).toString();
-    //if-else-elseif statement to add suffix to rank numbers
-    if(rank == 1){
-        rank+="st";
-    }
-    else if(rank == 2){
-        rank+="nd";
-    }
-    else if(rank == 3){
-        rank+="rd";
-    }
-    else{
-        rank+="th";
-    }
-    //set info as a variable for easier access
-    var infoString = "Main Character: <strong>" + mainCharacter[i] +"</strong><br>Secondary Character(s): <strong>" + secondaryCharacters[i] + "</strong><br>Peak Ranking: <strong>" + rank + "</strong><br>Current Ranking: <strong>" + currentRanking[i] + "</strong><br>Number of Times Ranked: <strong>" + timesRanked[i] + "</strong>";
-    info.innerHTML = infoString;
-    //get image url using mainCharacter
-    var imageUrl = "images/" + mainCharacter[i] + ".png";
-    var image = playerCards[i].querySelector("img.characterImage");
-	image.src = imageUrl;
-	image.alt = mainCharacter[i];
-    // Store metadata on the card for easy filtering
-    playerCards[i].dataset.timesRanked = timesRanked[i];
-    playerCards[i].dataset.peakRanking = peakRanking[i];
+    setContent(playerCards[i], players[i], mainCharacter[i], secondaryCharacters[i], peakRanking[i], currentRanking[i], timesRanked[i]);
 }
 
 // Hook up the filter dropdown (id matches rankings.html)
 var filterDropdown = document.getElementById('rankings-filter');
 
+//I already had a function in my code from last week, but I'm not counting this in the functions I'm adding
 function applyFilter() {
     if (!filterDropdown) return;
     var selected = filterDropdown.value; // "All", "1", "2", "3", "4", "5"
