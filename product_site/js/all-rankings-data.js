@@ -2,20 +2,21 @@
 //10/30/2025, .js file to fill out the player search section of the rankings.html file for
 //all 30 players that have been ranked in RI at some point since Summer 2022
 
-//basic function:
+//basic function: adds title to the player search section
 function addSearchTitle() {
     var title = "Player Search";
     var content = document.getElementById("title");
     content.textContent = title;
 };
 
-//function with input:
+//function with input: takes all variables needed to set content on the respective player card, and sets them
 function setContent(card, name, mainCharacter, secondaryCharacters, peakRank, currRank, timesRanked){
     //update player name heading, and info section
     var player = card.querySelector("h3.playerName");
 	player.textContent = name;
     var info = card.querySelector("p.info");
     var rank = peakRank.toString();
+    //call function to get rank suffix
     rank = getRankSuffix(rank);
     //set info as a variable for easier access
     var infoString = "Main Character: <strong>" + mainCharacter +"</strong><br>Secondary Character(s): <strong>" + secondaryCharacters + "</strong><br>Peak Ranking: <strong>" + rank + "</strong><br>Current Ranking: <strong>" + currRank + "</strong><br>Number of Times Ranked: <strong>" + timesRanked + "</strong>";
@@ -29,7 +30,7 @@ function setContent(card, name, mainCharacter, secondaryCharacters, peakRank, cu
     card.dataset.timesRanked = timesRanked;
     card.dataset.peakRanking = peakRank;
 };
-//function with return value:
+//function with return value: appends the correct suffix to the rank given in the input function, and returns a string with the number and suffix
 function getRankSuffix(rank){
     if(rank == 1){
         rank+="st";
@@ -75,6 +76,7 @@ for(var i = 0; i < playerCards.length; i++){
         playerCards[i].style.display = "none";
         continue;
     }
+    //use set content function to set all HTML content on each character card
     setContent(playerCards[i], players[i], mainCharacter[i], secondaryCharacters[i], peakRanking[i], currentRanking[i], timesRanked[i]);
 }
 
