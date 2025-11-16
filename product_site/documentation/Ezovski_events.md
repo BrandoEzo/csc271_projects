@@ -6,3 +6,6 @@ My idea for a JavaScript event handling process will occur on the event series w
 
 ## Draw an Event Handling Flowchart
 ![Event Handling Flowchart](image-3.png)
+
+## Form Events:
+- I am going to add a message when a user selects each input field with validation info, validation checks when the field loses focus, and a submit button that will reveal either a success or fail message. 
