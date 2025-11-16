@@ -109,6 +109,22 @@ div.playerCard{
   padding-right: 20px;
   padding-bottom: 20px;
 }
+div.eventCard{
+  background-color:rgb(111, 188, 251);
+  padding:20px;
+  margin:20px;
+}
+div .interestCard{
+  float: right;
+  background-color:rgb(236, 166, 255);
+  width:10%;
+  padding:20px;
+  margin:20px;
+}
+.interestImage {
+  float:center;
+  width:100%;
+}
 
 
 /*for small screens*/
