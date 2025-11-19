@@ -1,3 +1,10 @@
+//Brandon Ezovski, 11/18/2025, created this .js file to refactor all-rankings-data.js into an object oriented format for assignment 12
+// 
+// (these next comments are from the original file)
+// 11/5/2025, updated .js file to use functions.
+// 10/30/2025, .js file to fill out the player search section of the rankings.html file for
+// all 30 players that have been ranked in RI at some point since Summer 2022
+
 function Player(name, mainCharacter, secondaryCharacters, peakRank, currRank, timesRanked){
     this.name = name;
     this.mainCharacter = mainCharacter;
